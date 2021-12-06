@@ -72,17 +72,19 @@ in which delta is the interval time that the sensor detects the finger. And we r
 
 When the PIR sensors don't detect any moving people around or the Ultrasonic sensors detect the distance is far than the threshold, the NeoPixel Sticks light up in green Color. 
 
-<img src="https://lh5.googleusercontent.com/VZhy8_rbKzDUQLVWeD2LMaMv0MkrMKCM3J9-30tz0KyCEHorO2qWjgx305-7DA9F22cxUoveVyMeUu-7nnvWq9tN9ZkRkL1NHfkkwI_SjDixglOq61H_jyQTAXDI8uih3A" alt="img" style="zoom:27%;" /> 
+![](D:\GPA\Wearable\STM32L496\iHat_Pro\Result Image\Safe Distance.jpg) 
 
 #### Dangerous Distance
 
-When the PIR sensors 
+When the PIR sensors detect people moving around and the distance which Ultrasonic sensors detect is smaller than the threshold, the NeoPixel Sticks light up in red Color and the Buzzer would beep.
 
-<img src="https://lh4.googleusercontent.com/kJBNYAklnk-b53-SFlCcMXv8Nv18I8V1jOpHyoWADXoczS62-w3YnFkDPSzjw_vQkZBHEJblOe-yNJGR5_cQtqJDVGwL9-SlsKz-089cnIRKp_LGTk8EtQIFvHAH3o90lg" alt="img" style="zoom:26%;" /> 
+![](D:\GPA\Wearable\STM32L496\iHat_Pro\Result Image\Dangerous Distance.jpg) 
 
 ### Health Monitoring
 
-<img src="https://lh3.googleusercontent.com/u2xbcUQLVeRFxtNqJE-mYsY2IIokFiSc-Xxrml3NAyhwkst2SbHsrXHfxwvaptLfbDVumDKl64WNcdf4eM1oP3cRDwPFZ0IRSXyee3kNbIfNmyDf5j4HBcWA1psKJfyaVA" alt="img" style="zoom: 33%;" /> 
+The OLED would display the heart rate and temperature in real-time.
+
+ ![](D:\GPA\Wearable\STM32L496\iHat_Pro\Result Image\Health Monitor.jpg) 
 
 ## Future Work
 
