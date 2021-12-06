@@ -33,12 +33,12 @@ Each ultrasonic sensor requires 2 digital pins, one for triggering ultrasonic wa
 #### Distance Detecting
 
 At the beginning of the setup, we set a one-minute delay to let the PIR sensor calibrate. The NeoPixel Sticks will first light up in green color. The ultrasonic sensor’s output pin will first be set to low, then the output pin will be high for 10ms to launch the ultrasonic wave. The distance is calculated using the duration times the speed of sound.
-$$
+
 Distance = Speed * Time / 2
-$$
+
 in which speed is the speed of sound and the time is the duration time. If the distance of the object is within 100cm and the PIR sensor’s signal is high, the LEDs will turn red and the buzzer will beep.
 
-#### Health Monitoring
+### Health Monitoring
 
 We set up all the parameters of the heartbeat sensor, the temperature sensor, and the OLED display in the setup function. 
 
@@ -47,9 +47,9 @@ We set up all the parameters of the heartbeat sensor, the temperature sensor, an
 - Initialize the temperature sensor with default values.
 
 To calculate the heart rate, we need to determine if a finger is put on the sensor, which means the immediate IR value is higher than the threshold we set. If the finger is detected by the sensor, then we can calculate the heartbeat per minute using the function
-$$
-beatPerMinute = \frac{60}{(delta/1000.0)}
-$$
+
+beatPerMinute = 60 / (delta/1000.0)
+
 in which delta is the interval time that the sensor detects the finger. And we read the temperature using functions from the library of the sensor. After getting the data of heart rate and temperature from sensors, we display them on the OLED display using the display function from the library of OLED.
 
 ### Component List
@@ -72,19 +72,19 @@ in which delta is the interval time that the sensor detects the finger. And we r
 
 When the PIR sensors don't detect any moving people around or the Ultrasonic sensors detect the distance is far than the threshold, the NeoPixel Sticks light up in green Color. 
 
-![](D:\GPA\Wearable\STM32L496\iHat_Pro\Result Image\Safe Distance.jpg) 
+![](https://github.com/juyangbai/iHat_Pro/blob/main/Result%20Image/Safe%20Distance.jpg) 
 
 #### Dangerous Distance
 
 When the PIR sensors detect people moving around and the distance which Ultrasonic sensors detect is smaller than the threshold, the NeoPixel Sticks light up in red Color and the Buzzer would beep.
 
-![](D:\GPA\Wearable\STM32L496\iHat_Pro\Result Image\Dangerous Distance.jpg) 
+![](https://github.com/juyangbai/iHat_Pro/blob/main/Result%20Image/Dangerous%20Distance.jpg) 
 
-### Health Monitoring
+#### Health Monitoring
 
 The OLED would display the heart rate and temperature in real-time.
 
- ![](D:\GPA\Wearable\STM32L496\iHat_Pro\Result Image\Health Monitor.jpg) 
+ ![](https://github.com/juyangbai/iHat_Pro/blob/main/Result%20Image/Health%20Monitor.jpg) 
 
 ## Future Work
 
