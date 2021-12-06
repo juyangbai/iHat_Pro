@@ -82,7 +82,7 @@ When the PIR sensors detect people moving around and the distance which Ultrason
 
 ### Health Monitoring
 
-The OLED would display the heart rate and temperature in real-time.
+The OLED displays the heart rate and temperature in real-time.
 
  ![](https://github.com/juyangbai/iHat_Pro/blob/main/Result%20Image/Health%20Monitor.jpg) 
 
