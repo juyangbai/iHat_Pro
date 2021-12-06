@@ -38,7 +38,7 @@ Distance = Speed * Time / 2
 
 in which speed is the speed of sound and the time is the duration time. If the distance of the object is within 100cm and the PIR sensor’s signal is high, the LEDs will turn red and the buzzer will beep.
 
-### Health Monitoring
+#### Health Monitoring
 
 We set up all the parameters of the heartbeat sensor, the temperature sensor, and the OLED display in the setup function. 
 
@@ -80,7 +80,7 @@ When the PIR sensors detect people moving around and the distance which Ultrason
 
 ![](https://github.com/juyangbai/iHat_Pro/blob/main/Result%20Image/Dangerous%20Distance.jpg) 
 
-#### Health Monitoring
+### Health Monitoring
 
 The OLED would display the heart rate and temperature in real-time.
 
